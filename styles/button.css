@@ -1,0 +1,19 @@
+.btn {
+  padding: var(--spacing-3);
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: var(--primary-50);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-100);
+}
+
+.btn-secondary > svg > path {
+  stroke: var(--primary-700);
+}
