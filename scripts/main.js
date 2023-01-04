@@ -1,5 +1,11 @@
 const createTaskBtn = document.getElementById("create-task");
 
 createTaskBtn.addEventListener("click", () => {
-  console.log("Create task button clicked");
+  createModal();
 });
+
+function createModal() {
+  const modal = document.querySelector(".blur-layer");
+
+  modal.classList.remove("display-none");
+}
