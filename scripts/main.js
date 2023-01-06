@@ -1,11 +1,23 @@
 const createTaskBtn = document.getElementById("create-task");
+const modal = document.getElementById("modal");
+const modalCloseBtn = document.getElementById("close-modal");
+let isModalOpen = false;
 
-createTaskBtn.addEventListener("click", () => {
-  createModal();
-});
+createTaskBtn.onclick = () => {
+  modal.style.display = "block";
+};
 
-function createModal() {
-  const modal = document.querySelector(".blur-layer");
+modalCloseBtn.onclick = () => {
+  toggleModal();
+};
 
-  modal.classList.remove("display-none");
-}
+window.onclick = (event) => {
+  if (event.target == modal) {
+    toggleModal();
+  }
+};
+
+const toggleModal = () => {
+  const display = isModalOpen ? "block" : "none";
+  modal.style.display = display;
+};
