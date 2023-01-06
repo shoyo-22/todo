@@ -4,6 +4,7 @@
   border-radius: 8px;
   background-color: transparent;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .btn-secondary {
@@ -16,4 +17,13 @@
 
 .btn-secondary > svg > path {
   stroke: var(--primary-700);
+}
+
+.btn-primary {
+  background-color: var(--primary-600);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-700);
 }

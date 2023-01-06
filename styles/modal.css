@@ -28,3 +28,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
+form,
+form > .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  gap: 1rem;
+}

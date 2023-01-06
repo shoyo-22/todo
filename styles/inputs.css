@@ -1,0 +1,14 @@
+.input-field {
+  background-color: transparent;
+  border: 1px solid var(--gray-300);
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.input-field::-webkit-input-placeholder {
+  color: var(--gray-500);
+}
+
+.input-field:hover::-webkit-input-placeholder {
+  color: var(--gray-900);
+}

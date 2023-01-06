@@ -53,7 +53,31 @@
             </svg>
           </button>
         </header>
-        <section></section>
+        <section>
+          <form>
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="input-field"
+                placeholder="Enter title"
+              />
+            </div>
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea
+                name="description"
+                id="description"
+                rows="10"
+                class="input-field"
+                placeholder="Enter description"
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" id="saveTaskBtn">Save</button>
+          </form>
+        </section>
       </div>
     </section>
     <script src="./scripts/main.js" defer></script>
