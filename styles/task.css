@@ -1,0 +1,34 @@
+main,
+.tags,
+.task-card {
+  padding: var(--spacing-3);
+}
+
+main,
+.task-list-container {
+  display: grid;
+  gap: 1rem;
+}
+
+main {
+  grid-template-columns: 200px auto;
+}
+
+.task-list-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.task-card {
+  background-color: var(--gray-100);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .task-list-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
