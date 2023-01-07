@@ -37,8 +37,8 @@
           <h2>Create a task</h2>
           <button id="close-modal" class="btn btn-secondary">
             <svg
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@
           </button>
         </header>
         <section>
-          <form>
+          <form id="saveTaskForm">
             <div class="form-group">
               <label for="title">Title</label>
               <input
@@ -75,7 +75,9 @@
                 placeholder="Enter description"
               ></textarea>
             </div>
-            <button class="btn btn-primary" id="saveTaskBtn">Save</button>
+            <button class="btn btn-primary" id="saveTaskBtn" type="submit">
+              Save
+            </button>
           </form>
         </section>
       </div>
