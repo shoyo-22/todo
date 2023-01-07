@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function getTasks() {
-  TASKS = localStorage.tasks ? JSON.parse(localStorage.tasks) : null;
+  TASKS = localStorage.tasks ? JSON.parse(localStorage.tasks) : [];
 }
 
 createTaskBtn.onclick = () => {
